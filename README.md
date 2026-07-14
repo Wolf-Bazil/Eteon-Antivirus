@@ -1,7 +1,7 @@
 # 🛡️ Eteon AI-Integrated Antivirus Console
 > In Development | Zero-Permission Kernel-Level Sandbox Automation
 
-An enterprise-grade frontend dashboard and mission-critical technical management portal for the **Eteon AI Antivirus Platform**. This interface visualizes real-time notification interception, machine-learning text analysis, and zero-permission background threat quarantine pipelines.
+AI Integrated Antivirus software (In development) to detect malicious emails and texts through notifications, and is able to scan any file that is downloaded and quarrantines verified malicious files instantly without explicit permissions of the user.
 
 ---
 
