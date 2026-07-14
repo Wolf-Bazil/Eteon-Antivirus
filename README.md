@@ -1,195 +1,186 @@
-# Digital Rain Frontend Template
+Eteon presents an AI Integrated Antivirus software (In development) to detect malicious emails and texts through notifications, and is able to scan any file that is downloaded and quarrantines verified malicious files instantly without explicit permissions of the user.
 
-A dark, cinematic landing page with a canvas-based amber digital rain animation. Designed for AI/deep-tech companies, featuring falling mathematical symbols that splash into a simulated water surface with ripple physics.
+Features
+Real-Time Notification Interception View: Dedicated monitoring dashboard showing the interception and real-time parsing of incoming application notifications to block malicious links and social engineering payloads before user interaction.
 
-## Features
+SMS & Text Vector Parsing Matrix: A specialized inspection view illustrating how incoming text payloads are tokenized and scanned for phishing anchors using low-latency language transformers.
 
-- Full-viewport hero with interactive digital rain canvas background
-- Liquid glass button with SVG displacement map refraction effect
-- Capabilities section with hover-reveal images and GSAP scroll animations
-- Cinematic video section with ultrawide aspect ratio
-- Research project grid (4-column) with grayscale-to-color hover transitions
-- Capability detail sub-pages with article-style layout and prev/next navigation
-- Scroll-aware sticky navigation with blur backdrop
-- Fully responsive (mobile-friendly)
+Dynamic Download Stream Scanner: An active file-system telemetry viewport that tracks newly written files and displays background scanner heuristic activity.
 
-## Tech Stack
+Zero-Permission Quarantine Log: An automated administrative tracking ledger that details verified malicious files sandboxed and locked instantly by the engine without requiring explicit user intervention or permission prompts.
 
-- React 19 + TypeScript + Vite 7
-- Tailwind CSS 3.4
-- GSAP 3 (scroll-triggered animations)
-- React Router DOM 7 (client-side routing)
-- Canvas API (digital rain effect)
-- SVG Filters (liquid glass button)
-- Google Fonts (EB Garamond, Inter, Fira Code)
-- Geist Mono (loaded from node_modules)
+Technical Documentation Routing: Dedicated sub-pages for isolated, markdown-style engineering documentation and system compliance breakdowns.
 
-## Quick Start
+Adaptive Navigation: High-contrast sticky header optimized for continuous system monitoring.
 
-1. Clone this repository
-2. Install dependencies: `npm install`
-3. Edit `src/config.ts` with your content
-4. Add images to `public/images/`
-5. Add video to `public/videos/`
-6. Run dev server: `npm run dev`
-7. Build for production: `npm run build`
+Responsive Fluid Grid: Clean layout system built to adapt perfectly to standard workstation monitors, tablets, and mobile response terminals.
 
-## Configuration
+Tech Stack
+Core Framework: React 19 + TypeScript + Vite 7
 
-All content is configured in `src/config.ts`. Edit this file to customize your site.
+Styling Engine: Tailwind CSS 3.4
 
-### Config Structure
+Routing Engine: React Router DOM 7 (Single Page Application architecture)
 
-```typescript
-// Site-wide settings
-export const siteConfig: SiteConfig = {
-  language: "",       // BCP-47 language code, e.g. "en"
-  brandName: "",      // Brand name in nav bar (max ~20 chars)
-};
+Typography: System Serif & Sans-Serif font stacks (Inter, System Mono)
 
-// Main navigation
-export const navigationConfig: NavigationConfig = {
-  links: [],          // Array of { label: string, href: string }
-  ctaText: "",        // Right-side CTA button text
-};
+Quick Start
+1. Clone & Install
+Bash
+git clone <repository-url>
+cd 01-cyber-rain-frontend
+npm install
+2. Asset Preparation
+Populate core module diagrams in public/images/capability-*.jpg (Minimum: 400x300px)
 
-// Hero section
-export const heroConfig: HeroConfig = {
-  title: "",          // Main heading (max ~20 chars)
-  subtitleLine1: "",  // First subtitle line (max ~90 chars)
-  subtitleLine2: "",  // Second subtitle line (max ~60 chars)
-  ctaText: "",        // Button text (max ~25 chars)
-};
+Populate research asset cards in public/images/research-*.jpg (Aspect ratio: 1:1, Minimum: 400x400px)
 
-// Capabilities section
-export const capabilitiesConfig: CapabilitiesConfig = {
-  sectionLabel: "",   // Section label, e.g. "Capabilities"
-  items: [],          // Array of { title, slug, description, image }
-};
+Place the system architecture video in public/videos/cinematic-vision.mp4
 
-// Capability detail pages
-export const capabilityDetailConfig: CapabilityDetailConfig = {
-  sectionLabel: "",   // Page label, e.g. "Capability"
-  backLinkText: "",   // Back link text, e.g. "Back to home"
-  prevLabel: "",      // Previous nav label
-  nextLabel: "",      // Next nav label
-  notFoundText: "",   // 404 message
-  capabilities: {},   // Record<slug, { title, subtitle, paragraphs[] }>
-};
+3. Development & Production
+Bash
+# Run local development server
+npm run dev
 
-// Architecture / video section
-export const architectureConfig: ArchitectureConfig = {
-  sectionLabel: "",   // Section label, e.g. "Architecture"
-  videoPath: "",      // Video file path, e.g. "/videos/cinematic-vision.mp4"
-  title: "",          // Section heading (max ~55 chars)
-  description: "",    // Description paragraph
-};
-
-// Research grid section
-export const researchConfig: ResearchConfig = {
-  sectionLabel: "",   // Section label, e.g. "Research"
-  projects: [],       // Array of { title, year, discipline, image }
-};
-
-// Footer
-export const footerConfig: FooterConfig = {
-  heading: "",        // Footer heading (max ~35 chars)
-  columns: [],        // Array of { title, links[] }
-  copyright: "",      // Copyright text
-  bottomLinks: [],    // Array of { label, href }
-};
-```
-
-## Required Images
-
-### Capability Section (4 images)
-- `public/images/capability-1.jpg` - Hover image (min 400x300)
-- `public/images/capability-2.jpg`
-- `public/images/capability-3.jpg`
-- `public/images/capability-4.jpg`
-
-### Research Grid (3-4 unique images)
-- `public/images/research-1.jpg` - Square format (1:1, min 400x400)
-- `public/images/research-2.jpg`
-- `public/images/research-3.jpg`
-- `public/images/research-4.jpg` (optional)
-
-### Video
-- `public/videos/cinematic-vision.mp4` - Looping video (21:9 aspect ratio, under 15MB)
-
-## Design
-
-**Colors:**
-- Background: `#0a0a0a` (near-black)
-- Primary text: `#ffffff` (white)
-- Secondary text: `#dadada` (light gray)
-- Accent: amber tones `rgba(200, 170, 130)`
-- Primary HSL: `34 68% 75%`
-
-**Fonts:**
-- Display/Brand: GeistMono (monospace, from node_modules)
-- Headings: EB Garamond (serif, Google Fonts)
-- Body: Inter (sans-serif, Google Fonts)
-- Code/Year: Fira Code (monospace, Google Fonts)
-
-**Key Animations:**
-- Digital rain: Canvas-rendered falling symbols with water physics and ripple effects
-- Liquid glass button: SVG displacement filter simulating glass refraction
-- GSAP scroll reveals: Staggered fade-in on intersection for capabilities and research grid
-- Hover transitions: Amber color shift on capability titles, grayscale-to-color on research images
-
-## Build
-
-```bash
+# Compile production-ready build
 npm run build
-```
+Configuration
+All content layers, structural link routing, and copy modules are driven via configurations defined in src/config.ts.
 
-Output in `dist/` folder ready to deploy. Supports any static hosting (Netlify, Vercel, Cloudflare Pages, etc.).
+TypeScript
+import { 
+  SiteConfig, 
+  NavigationConfig, 
+  HeroConfig, 
+  CapabilitiesConfig, 
+  CapabilityDetailConfig, 
+  ArchitectureConfig, 
+  ResearchConfig, 
+  FooterConfig 
+} from './types';
 
-## Project Structure
+// Global Platform Meta Settings
+export const siteConfig: SiteConfig = {
+  language: "en",
+  brandName: "Aegis AI", 
+};
 
-```
+// Global Navigation
+export const navigationConfig: NavigationConfig = {
+  links: [
+    { label: "Capabilities", href: "#capabilities" },
+    { label: "Architecture", href: "#architecture" },
+    { label: "Threat Research", href: "#research" }
+  ],
+  ctaText: "Initialize Scanner",
+};
+
+// Hero Component Content
+export const heroConfig: HeroConfig = {
+  title: "Automated Threat Isolation",
+  subtitleLine1: "Zero-permission scanning engine engineered for immediate quarantine protocols.",
+  subtitleLine2: "Intercepting malicious payloads within notifications, SMS, and file streams in real time.",
+  ctaText: "Deploy Engine",
+};
+
+// Security Capabilities Layout
+export const capabilitiesConfig: CapabilitiesConfig = {
+  sectionLabel: "Engine Capabilities",
+  items: [
+    { 
+      title: "Notification Interception", 
+      slug: "notification-interception", 
+      description: "Real-time parsing of incoming notification objects and SMS payloads using NLP transformers.", 
+      image: "/images/capability-1.jpg" 
+    },
+    { 
+      title: "Zero-Permission Quarantine", 
+      slug: "autonomous-quarantine", 
+      description: "Automated sandboxing and locking of verified malicious binaries without requiring user intervention.", 
+      image: "/images/capability-2.jpg" 
+    }
+  ],
+};
+
+// Deep Dive Sub-page Configuration
+export const capabilityDetailConfig: CapabilityDetailConfig = {
+  sectionLabel: "Technical Documentation",
+  backLinkText: "← Return to Console",
+  prevLabel: "Previous Module",
+  nextLabel: "Next Module",
+  notFoundText: "Specified security module documentation could not be found.",
+  capabilities: {
+    "notification-interception": {
+      title: "Notification Stream Analysis",
+      subtitle: "Parsing unstructured text vectors at the OS level.",
+      paragraphs: [
+        "The AI Engine hooks directly into system notification dispatches, converting raw text strings into tokenized representations to verify origin integrity before the user interacts with the alert.",
+        "When malicious anchors or phishing payloads are derived, the system immediately drops the notification thread, preventing social engineering attacks instantly."
+      ]
+    }
+  },
+};
+
+// Architecture Section
+export const architectureConfig: ArchitectureConfig = {
+  sectionLabel: "System Architecture",
+  videoPath: "/videos/cinematic-vision.mp4",
+  title: "Low-Latency Kernel-Level Inspection Framework",
+  description: "Technical lifecycle display tracking an incoming packet through heuristic and deterministic analysis loops.",
+};
+
+// Research & Threat Intelligence Grid
+export const researchConfig: ResearchConfig = {
+  sectionLabel: "Threat Intelligence & Research",
+  projects: [
+    { title: "Heuristic Zero-Day Vector Models", year: "2026", discipline: "Machine Learning", image: "/images/research-1.jpg" },
+    { title: "Automated Sandbox Isolation Bounds", year: "2026", discipline: "Kernel Security", image: "/images/research-2.jpg" },
+  ],
+};
+
+// Footer Interface Structure
+export const footerConfig: FooterConfig = {
+  heading: "Secure the Next Edge.",
+  columns: [
+    {
+      title: "Platform",
+      links: [{ label: "Core Engine", href: "#" }, { label: "Enterprise SDK", href: "#" }]
+    }
+  ],
+  copyright: "© 2026 Aegis AI Systems Inc. All rights reserved.",
+  bottomLinks: [
+    { label: "Privacy Policy", href: "/privacy" },
+    { label: "Security Disclosures", href: "/disclosures" }
+  ],
+};
+Layout Structure
+The layout features standard high-contrast accessibility presets, using clean black text on a clear white/light-gray canvas background, or high-contrast utility dark modes where appropriate. Font treatments rely on standard clean text structures for immediate parsing by enterprise operators.
+
+Project Directory Tree
 01-cyber-rain-frontend/
-├── index.html                  # Entry point (Google Fonts loaded here)
-├── package.json                # Dependencies
-├── vite.config.ts              # Vite build config
-├── tailwind.config.js          # Tailwind theme (shadcn preset)
-├── tsconfig.json               # TypeScript config
-├── postcss.config.js           # PostCSS config
-├── eslint.config.js            # ESLint config
+├── index.html                  # Main SPA entry point
+├── package.json                # Runtime dependencies & compilation scripts
+├── vite.config.ts              # Production build optimizations & bundling parameters
+├── tailwind.config.js          # Layout breakpoints, core colors, and functional presets
+├── tsconfig.json               # Strict compiler type declarations
 ├── public/
-│   ├── images/.gitkeep         # Add your images here
-│   └── videos/.gitkeep         # Add your video here
+│   ├── images/                 # Module diagrams & threat research graphics
+│   └── videos/                 # Video format system architecture files
 └── src/
-    ├── config.ts               # All content configuration
-    ├── main.tsx                 # React entry (BrowserRouter)
-    ├── App.tsx                  # Routes (HomePage + CapabilityDetail)
-    ├── index.css                # Global styles, @font-face, nav-link class
-    ├── lib/
-    │   └── utils.ts            # Tailwind merge utility
-    ├── hooks/
-    │   └── use-mobile.ts       # Mobile breakpoint hook
+    ├── config.ts               # Content data layer config
+    ├── main.tsx                # Client bootstrapper injected with BrowserRouter 
+    ├── App.tsx                 # Core App routing parameters
+    ├── index.css               # Base Tailwind configurations and layout utility styles
     ├── components/
-    │   ├── LiquidGlassButton.tsx  # Glass refraction button
-    │   └── ui/                    # shadcn/ui component library
+    │   ├── StandardButton.tsx  # Standard functional UI action component
+    │   └── ui/                 # Atomic UI primitives
     └── sections/
-        ├── Navigation.tsx      # Sticky nav bar
-        ├── Hero.tsx            # Hero with digital rain
-        ├── AmberCascades.tsx   # Canvas digital rain effect
-        ├── Curriculum.tsx      # Capabilities listing
-        ├── CinematicVision.tsx # Video + text section
-        ├── AlumniArchives.tsx  # Research project grid
-        ├── CapabilityDetail.tsx # Detail sub-page
-        └── Footer.tsx          # Footer with link columns
-```
-
-## Notes
-
-- Do not modify component files unless fixing bugs
-- All content goes in `src/config.ts`
-- Images go in `public/images/`
-- Video goes in `public/videos/`
-- Design properties (colors, fonts) are set in `tailwind.config.js` and `index.css`
-- The Geist font is loaded from `node_modules` via `@font-face` in `index.css` -- make sure to run `npm install` before dev
-- The digital rain animation respects `prefers-reduced-motion` media query
-- React Router uses `BrowserRouter` -- configure your hosting for SPA fallback (redirect all routes to `index.html`)
+        ├── Navigation.tsx      # Fixed system utility navigation bar
+        ├── Hero.tsx            # Console introduction header
+        ├── Capabilities.tsx    # Core platform module list layout
+        ├── Architecture.tsx    # System video walk-through element
+        ├── ResearchGrid.tsx    # Data-driven threat research table/grid
+        ├── CapabilityDetail.tsx # Document layout views for dynamic routes
+        └── Footer.tsx          # Compliance links and institutional copyrights
+Deployment Parameters
+The application builds out to static web primitives inside /dist. When hosting on standard static architectures (Vercel, Cloudflare Pages, Netlify, AWS S3), ensure rewrite rules redirect all incoming routing requests back to /index.html to enable the BrowserRouter instance to properly process client-side routes without generating server 404 errors.
