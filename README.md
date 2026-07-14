@@ -197,8 +197,8 @@ export const footerConfig: FooterConfig = {
 
 ---
 
-## 📞 Administrative Contact & Ownership
+## 📞 Contact
 
-| **Development Organization** | Eteon |
-| **Owner** | Mon |
-| **Support** | eteonbots@gmail.com |
+* **Company:** Eteon
+* **Owner:** Mon
+* **Contact:** eteonbots@gmail.com/mondas23990@gmail.com
