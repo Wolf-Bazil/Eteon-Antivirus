@@ -1,7 +1,7 @@
 # 🛡️ Eteon AI-Integrated Antivirus Console
 > In Development | Zero-Permission Kernel-Level Sandbox Automation
 
-AI Integrated Antivirus software to detect malicious emails and texts through notifications, is able to scan any file that is downloaded in the system and quarrantines verified malicious files instantly without explicit permissions of the user.
+AI-integrated antivirus software detects malicious emails and texts through notifications, is able to scan any file downloaded in the system, and quarantines verified malicious files instantly without explicit user permission.
 
 ---
 
