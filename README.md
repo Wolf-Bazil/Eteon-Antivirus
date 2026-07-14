@@ -191,4 +191,14 @@ export const footerConfig: FooterConfig = {
         ├── ResearchGrid.tsx    # Structured data framework tracking zero-day bulletins
         ├── CapabilityDetail.tsx # Deep-dive markdown documentation layout wrapper
         └── Footer.tsx          # System legal data & platform routing parameters
+```
+
 🌐 Production Provisioning & DeploymentsCompilation aggregates static framework layers completely within the local /dist target path.[!IMPORTANT]When hosting compiled output structures on distributed content delivery networks (Cloudflare Pages, AWS S3, Vercel, Netlify), it is mandatory to map custom routing parameters to route all server-side fallback traffic (/*) explicitly into /index.html. This ensures the embedded client-side BrowserRouter properly resolves dynamic engineering routing contexts without throwing unauthorized server 404 anomalies.
+
+---
+
+## 📞 Administrative Contact & Ownership
+
+| **Development Organization** | Eteon |
+| **Owner** | Mon |
+| **Support** | eteonbots@gmail.com |
